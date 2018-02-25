@@ -8,9 +8,9 @@ import { AuthService } from '../../services/auth.service';
 })
 
 export class LoginComponent implements OnInit {
-  test: string = this.auth.test();
+  test: string = 'just a test';
   constructor(private auth: AuthService) {}
   ngOnInit(): void {
-    console.log(this.auth.test());
+    console.log('inside test');
   }
 }
