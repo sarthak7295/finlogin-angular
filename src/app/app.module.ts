@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -15,8 +16,8 @@ import { LoginComponent } from './components/login/login.component';
     RouterModule.forRoot([
       { path: 'login', component: LoginComponent }
     ])
-  ],
-  providers: [],
+  ], 
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 
