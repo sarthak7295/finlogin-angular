@@ -11,10 +11,13 @@ export class LoginComponent {
   user: User = new User();
   constructor(private auth: AuthService) {}
   onLogin(): void {
+
     this.auth.login(this.user)
     .then((user) => {
       localStorage.setItem('token', user.json().auth_token);
     })
+    
+
     .catch((err) => {
       console.log(err);
     });
