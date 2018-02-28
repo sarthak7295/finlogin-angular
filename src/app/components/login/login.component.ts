@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import { User } from '../../models/user';
+import { HttpResponse } from 'selenium-webdriver/http';
 
 @Component({
   selector: 'login',
@@ -9,17 +10,16 @@ import { User } from '../../models/user';
 })
 export class LoginComponent {
   user: User = new User();
+  data1;
   constructor(private auth: AuthService) {}
   onLogin(): void {
 
-    this.auth.login(this.user)
-    .then((user) => {
-      localStorage.setItem('token', user.json().auth_token);
-    })
+    this.data1=this.auth.login(this.user)
     
-
-    .catch((err) => {
-      console.log(err);
-    });
+    
+    console.log(this.data1);
+    
+    
+    
   }
 }
