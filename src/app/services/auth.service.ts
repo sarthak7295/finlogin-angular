@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Headers, Http } from '@angular/http';
 import { User } from '../models/user';
-import { loginResponse } '../models/login-response';
+import { loginResponse } from '../models/login-response';
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()

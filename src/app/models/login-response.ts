@@ -1,4 +1,4 @@
-export class loginResponse {
+export interface loginResponse {
     userId: number;
     error: string;
     success: string;
