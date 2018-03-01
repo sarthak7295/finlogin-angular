@@ -4,7 +4,7 @@ import { User } from '../../models/user';
 import { HttpResponse } from 'selenium-webdriver/http';
 import { loginResponse } from '../../models/login-response';
 @Component({
-  selector: 'login',
+  selector: 'login-me',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
