@@ -11,7 +11,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class AuthService {
-  private BASE_URL: string = 'http://localhost:8080';
+  private BASE_URL: string = 'http://testlogin-env.a5n2keveqz.ap-southeast-1.elasticbeanstalk.com';
   private headers: Headers = new Headers({'Content-Type': 'application/json','responseType':'application/json;charset=UTF-8'});
   httpdata:Response;
   constructor(private http: Http) {}
