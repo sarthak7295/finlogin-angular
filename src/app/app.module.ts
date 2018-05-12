@@ -25,7 +25,7 @@ import { TestComponent } from './components/test/test.component';
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
       { path: 'test', component: TestComponent }
-    ])
+    ],{useHash : true})
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
